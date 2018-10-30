@@ -1,0 +1,31 @@
+[
+    {
+    "testname":"Тест №1",
+    "question":"Валюта в России",
+    "variants":{
+    "variant1":"рубли",
+    "variant2":"доллары",
+    "variant3":"евро",
+    "variant4":"марки",
+    "variant5":"кроны"
+    },
+    "answer":"рубли"
+    },
+  
+    {
+        "question":"Часовой пояс Санкт-Петербурга",
+        "variants":{"variant1":"+2",
+        "variant2":"+3",
+        "variant3":"+4"
+        },
+        "answer":"+3"
+    }    
+    
+
+  
+]
+
+
+
+
+

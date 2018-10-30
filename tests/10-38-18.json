@@ -1,0 +1,23 @@
+[{
+
+  "testname":"Тест №2",
+
+  "question":"Сколько лап у крокодила?",
+  "variants":{
+  "variant1":"2",
+  "variant2":"3",
+  "variant3":"4"
+  },
+  "answer":"4"
+  },
+
+  {
+  "question":"Где находится Танзания?",
+  "variants":{"variant1":"Европа",
+  "variant2":"Азия",
+  "variant3":"Африка",
+  "variant4":"Южная Америка"},
+  "answer":"Африка"
+}
+
+]
