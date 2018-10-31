@@ -1,7 +1,7 @@
 <?php 
 if (!$_GET) exit; 
 else{
-if (!@$test=file_get_contents('tests/'.$_GET["test"])) header('HTTP/1.1 404 Not Found'); else {
+if (!@$test=file_get_contents('tests/'.$_GET["test"])) header('HTTP/1.0 404 Not Found'); else {
 
 echo "<p><b>Список тестов:</b></p>";
 $dir = 'tests';
