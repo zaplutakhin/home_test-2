@@ -54,7 +54,6 @@ $i=1;
 $mark=0;
 if (!empty($_POST)){
    echo $_POST['name'];
-   //echo "<p><h3>Результат:</h3></p>";
    foreach ($rigthanswers as $right){
    if ($_POST[$i]==$right) {$mark++; echo "<p>Ответ на вопрос $i ($_POST[$i]) верный</p>";} else echo "<p>Ответ на вопрос $i ($_POST[$i]) неверный</p>";
     $i++;
@@ -68,11 +67,10 @@ $i=$i-1;
 if ($mark==0 or $i >= 5) $text_mark = "$mark баллов из $i"; 
 if ($mark==1) $text_mark = "$mark балл из $i";
 if ($mark >= 2 and $i <= 4) $text_mark = "$mark балла из $i";
-$font = 'Helvetica.ttf';
 $black = imagecolorallocate($image, 0, 0, 0);
 $textcolor = imagecolorallocate($image, 80, 80, 80);
-
 imagecopy($image, $img, 0, 0, 0, 0, 300,212);
+$font = 'fonts/Helvetica.ttf';
 $bbox_name = imagettfbbox(20, 0, $font, $text_name);
 $bbox_mark = imagettfbbox(16, 0, $font, $text_mark);
 $x_name = 150 - round(($bbox_name[2] - $bbox_name[0]) / 2);
@@ -82,7 +80,6 @@ imagettftext($image, 20, 0, $x_name, 110, $black, $font, $text_name);
 imagettftext($image, 16, 0, $x_mark, 150, $black, $font, $text_mark);
 imagepng($image, "sertificat.png");
 imagedestroy($image);
-
 ?>
 <img src="sertificat.png"></img>
 <?php
